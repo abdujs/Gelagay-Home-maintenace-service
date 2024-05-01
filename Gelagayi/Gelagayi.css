@@ -4,41 +4,64 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background:fixed linear-gradient(to bottom, rgb(236, 219, 219), rgb(185, 185, 197));
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 300px;
+}
+
+.search-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #668cb4;
+
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+.wellcom{
     background-color: #f5f5f5;
     padding: 20px;
     text-align: center;
-}
-
-.hero {
-    text-align: center;
-    padding: 40px;
-}
-
-.hero img {
-    max-width: 100%;
-}
-
-.how-it-works {
-    background-color: #fff;
-    padding: 40px;
-}
-
-.how-it-works ol {
-    list-style-type: decimal;
-    padding-left: 20px;
-}
-
-.why-choose-gelagayi {
-    background-color: #f5f5f5;
-    padding: 40px;
-}
-
-.why-choose-gelagayi ul {
-    list-style-type: disc;
-    padding-left: 20px;
 }
 
 .join-now {
@@ -55,15 +78,32 @@ header {
     text-decoration: none;
     border-radius: 4px;
 }
+.how-it-works {
+    background-color: none;
+    padding: 40px;
+}
+
+.how-it-works ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.why-choose-gelagayi {
+    background-color: none;
+    padding: 40px;
+}
+
+.why-choose-gelagayi ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
 
 footer {
-    background-color: #f5f5f5;
-    padding: 20px;
+    background-color: #c7c2c2;
+    padding: 20px 0px 0px 0px;
     text-align: center;
+    margin-top: 200px;
+    padding: 30px;
 }
 
-footer nav a {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-}
