@@ -1,0 +1,69 @@
+/* CSS styles for the Gelagayi landing page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+.how-it-works {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.how-it-works ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.why-choose-gelagayi {
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+.why-choose-gelagayi ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.join-now {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.signup-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
