@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Service - Gelagayi</title>
+  <link rel="icon" href="gelagayilogo.jpg">
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+  <header>
+    <a href="home.html"><img src="gelagayilogo.jpg" class="glogo" ></a>
+    <label class="gname">Gelagayi</label>
+  </header>
+
+  <section class="form-container">
+    <h1>Book Service</h1>
+    <form >
+        <input type="text" id="name" name="name" placeholder="User Name" required>
+        <input type="tel" id="pnumber" name="pnumber" pattern="[0-9]{10}" placeholder="Phone Number" required>
+        <input type="text" id="address" name="address" placeholder="Address" required>
+        <label for="service">Service Needed:</label>
+        <select id="service" name="service" required>
+            <option value="plumbing">Plumbing</option>
+            <option value="Electrical Work">Electrical Work</option>
+            <option value="Repair">Repair</option>
+            <option value="Dish Installation">Dish Installation</option>
+            <option value="Cleaning">Cleaning</option>
+            <option value="Paintaing">Painting</option>
+        </select>
+
+        <button type="submit">Book!</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-section about">
+      <a href="home.html" > <img src="logo1.png" ></a><br>
+      <p >Gelagayi is a digital marketplace
+        that aims to change the home maintenance 
+        service industry by providing a seamless platform 
+        for connecting homeowners with skilled professionals. 
+      </p>
+  </div>
+  <div class="footer-section contact">
+      <h2>Contact</h2>
+      <h3>+251 911111111</h3><br>
+      <h3>+251 711111111</h3><br>
+      <h3>+251 911111112</h3><br>
+      <a href="mailto:Gelagayi@gmail.com"><h3>Gelagayi@gmail.com</h3></a>
+  </div>
+  <div class="footer-section quicklinks">
+      <h2>Quick Links</h2>
+      <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="contactus.html">contactus</a></li>
+          <li><a href="services.html">service</a></li>
+      </ul>
+  </div>
+  <div class="webasig">
+  <p>&copy; May 2024 Gelagayi Home Maintenance
+    AAUSOC Web Assignment</p>
+  </div>
+</footer> 
+
+</body>
+</html>
