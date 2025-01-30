@@ -1,73 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sign Up - Home Maintenance Platform</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f1f1f1;
-      border-radius: 10px;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .form-group button {
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .form-group button:hover {
-      background-color: #45a049;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Gelagayi Home Maintenance</title>
+  <link rel="icon" href="gelagayilogo.jpg">
+  <link rel="stylesheet" href="formstyle.css">
 </head>
 <body>
-  <div class="container">
+  <header>
+    <a href="home.html"><img src="gelagayilogo.jpg" class="glogo" ></a>
+    <label class="gname">Gelagayi</label>
+    <nav>
+        <div class="auth-buttons">
+            <a href="Glogin.html" class="login">Log In</a>
+        </div>
+    </nav>
+  </header>
+
+  <section class="form-container">
     <h2>Sign Up</h2>
-    <form>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+    <form  method="POST">
+      <div class="input-group">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
+      <div class="input-group">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+      </div>
+      <div class="input-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Format: 0986949555" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
       </div>
-      <div class="form-group">
-        <label for="password">Password</label>
+      <div class="input-group">
+        <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
       </div>
-      <div class="form-group">
-        <button type="submit">Sign Up</button>
+      <div class="input-group">
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
       </div>
+      <button type="submit">Sign Up</button>
     </form>
+  </section>
+
+  <footer>
+    <div class="footer-section about">
+      <a href="home.html" > <img src="logo1.png" ></a><br>
+      <p >Gelagayi is a digital marketplace
+        that aims to change the home maintenance 
+        service industry by providing a seamless platform 
+        for connecting homeowners with skilled professionals. 
+      </p>
   </div>
+  <div class="footer-section contact">
+      <h2>Contact</h2>
+      <h3>+251 911111111</h3><br>
+      <h3>+251 711111111</h3><br>
+      <h3>+251 911111112</h3><br>
+      <a href="mailto:Gelagayi@gmail.com"><h3>Gelagayi@gmail.com</h3></a>
+  </div>
+  <div class="footer-section quicklinks">
+      <h2>Quick Links</h2>
+      <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="contactus.html">contactus</a></li>
+          <li><a href="services.html">service</a></li>
+      </ul>
+  </div>
+  <div class="webasig">
+  <p>&copy; May 2024 Gelagayi Home Maintenance
+    AAUSOC Web Assignment</p>
+  </div>
+</footer> 
+
 </body>
 </html>
