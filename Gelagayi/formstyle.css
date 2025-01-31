@@ -1,193 +1,172 @@
-/* form.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+/* Reset some default browser styles */
+* {
   padding: 0;
-  background-color: #f5fcfb;
-}
-
-header {
-  background-color: none;
-  padding: 30px 10px;
-}
-
-.auth-buttons {
-  float: right;
-}
-
-.auth-buttons a {
-  color: #fff;
+  margin: 0;
   text-decoration: none;
-  margin: 0 20px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #102925;
-  border: 1px solid #102925;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-.auth-buttons a:hover {
-  background-color: transparent;
-  color: #102925;
+/* Color Variables */
+:root {
+  --primary-color: #102925; /* Dark Teal */
+  --secondary-color: #55ae9f; /* Light Teal */
+  --accent-color: #44b7a4; /* Accent Green */
+  --background-color: #fbffff; /* Light background */
+  --text-color: #333333; /* Dark Gray */
 }
 
-.glogo {
-  float: left;
-  height: 70px;
-  padding-left: 20px;
-  margin-right: 10px;
-  padding-top: 10px;
+/* Set the default font for the body */
+body {
+  font-family: 'Merriweather Sans', sans-serif; /* Consistent font */
+  background-color: var(--background-color);
 }
 
-.gname {
-  color: #102925;
-  font-size: 25px;
-  line-height: 80px;
-  float: left;
-  font-weight: bold;
+/* Booking Section Styles */
+.booking-section {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-a:hover {
-  font-size: 1.1em;
-  color: #ffffff;
-  background-color: transparent;
+.booking-section h1 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 30px;
 }
 
-.form-container {
-  width: 60%;
-  margin: 50px auto;
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #ffffff;
-  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.form-container h2 {
-  color: #102925;
+.form-group {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between label and input */
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+  flex: 1; /* Allow label to take up necessary space */
+  margin-right: 10px; /* Space between label and input */
   font-weight: bold;
+  color: #102925;
+  display: flex; /* Use flex for vertical alignment */
+  align-items: center; /* Center align the label text */
 }
 
-.input-group {
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  flex: 2; /* Allow input to take more space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--accent-color);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 750px) {
+  .booking-section {
+    padding: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column; /* Stack elements on small screens */
+    align-items: flex-start; /* Align to the start */
+  }
+
+  label {
+    margin-right: 0; /* Remove right margin on small screens */
+    margin-bottom: 5px; /* Add space below label */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+/* Form Container Styles */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
-.input-group label {
+.input-group {
+  margin-bottom: 15px;
+  text-align: left; /* Align labels to the left */
+}
+
+label {
   display: block;
   margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
-.input-group input {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.input-group input:focus {
-  outline: none;
-  border-color: #102925;
-}
-
-input, select {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 button {
   width: 100%;
+  background-color: var(--primary-color);
+  color: #ffffff;
   padding: 10px;
-  background-color: #102925;
-  color: #fff;
-  border: 1px solid #102925;
-  border-radius: 5px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: transparent;
-  color: #102925;
+  background-color: var(--accent-color);
 }
 
-.logo2 img {
-  height: 50px;
-  margin-right: 10px;
+.forgot-password {
+  margin-top: 10px;
 }
 
-.logo2info {
-  font-weight: bold;
-  color: #286359;
+.forgot-password a {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
-
-footer {
-  background-color: #102925;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.footer-section {
-  flex: 1;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-.footer-section img {
-  height: 100px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-}
-
-.footer-section h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #29685e;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 10px;
-}
-
-.footer-section ul li {
-  margin-bottom: 5px;
-}
-
-.footer-section a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.footer-section ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.webasig {
-  font-size: larger;
-  text-align: center;
-  width: 100%;
-  padding-top: 30px;
-}
-
-@media (max-width: 750px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-
-
-
 
