@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log In - Gelagayi</title>
   <link rel="icon" href="img/gelagayilogo.jpg">
-  <link rel="stylesheet" href="formstyle.css">
+  <link rel="stylesheet" href="css/formstyle.css">
 </head>
 <body>
 
   <section class="form-container">
     <h2>Log In</h2>
-    <form method="POST">
-      <div class="input-group">
+    <form id="loginForm" method="POST" onsubmit="showResponse(event, 'Log In', 'loginForm', 'responseCardLogin')">      <div class="input-group">
         <label for="user_name">User Name:</label>
         <input type="text" id="user_name" name="User_name" placeholder="Enter your user name" required>
       </div>
@@ -21,9 +20,13 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
       </div>
-      
       <button type="submit">Log In</button>
     </form>
-  </section>
+    <div id="responseCardLogin" class="response-card">
+      <div class="response-message"></div>
+      <button class="ok-button" onclick="returnToForm('loginForm', 'responseCardLogin')">OK</button>
+  </div>  </section>
+  <script src="js/responseCard.js"></script>
+
 </body>
 </html>
