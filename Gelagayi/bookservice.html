@@ -5,30 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Service - Gelagayi</title>
   <link rel="icon" href="img/logo1.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet"  href="formstyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"  href="css/formstyle.css">
 </head>
 <body>
 
-  <nav>
-    <input type="checkbox" id="cheak">
-    <label class="checkbtn" for="cheak">&#9776;</label>
-    <a href="home.html"><img src="img/logo1.png" class="glogo" alt="Gelagayi Logo"></a>
-    <label class="gname">Gelagayi</label>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#aboutus">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contactus">Contact Us</a></li>
-    </ul>
-  </nav>
-
   <main>
+
     <section class="booking-section">
       <h1>Book Your Service</h1>
-      <form action="submit_booking.php" method="POST">
-        <div class="form-group">
-          <label for="name">Full Name:</label>
+      <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="showResponse(event, 'Book Service', 'bookingForm', 'responseCardBooking')">          <label for="name">Full Name:</label>
           <input type="text" id="name" name="name" placeholder="full name..." required>
         </div>
         
@@ -62,33 +48,14 @@
       
         <input type="submit" value="Book Service">
       </form>
-    </section>
+      <div id="responseCardBooking" class="response-card">
+        <div class="response-message"></div>
+        <button class="ok-button" onclick="returnToForm('bookingForm', 'responseCardBooking')">OK</button>
+    </div>    </section>
+
   </main>
 
-  <footer>
-    <div class="footer-section about">
-      <a href="home.html"><img src="img/logo1.png" alt="Gelagayi Logo"></a>
-      <p>Gelagayi is a digital marketplace that changes the home maintenance service industry by connecting homeowners with skilled professionals.</p>
-    </div>
-    <div class="footer-section contact">
-      <h2>Contact</h2>
-      <h3>+251 911111111</h3>
-      <h3>+251 711111111</h3>
-      <a href="mailto:Gelagayi@gmail.com"><h3>Gelagayi@gmail.com</h3></a>
-    </div>
-    <div class="footer-section quicklinks">
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#aboutus">About</a></li>
-        <li><a href="#contactus">Contact Us</a></li>
-        <li><a href="#services">Services</a></li>
-      </ul>
-    </div>
-    <div class="webasig">
-      <p>&copy; May 2024 Gelagayi Home Maintenance</p>
-    </div>
-  </footer>
-
+ 
+  <script src="js/responseCard.js"></script>
 </body>
 </html>
