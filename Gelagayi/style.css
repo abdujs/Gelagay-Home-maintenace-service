@@ -130,7 +130,7 @@ a.active, a:hover {
 
 .btn-signup {
   background-color: #144d43;
-  border: 2px solid #72aea4;
+  border: 2px solid #011815;
   color: #ffffff;
 }
 
@@ -393,34 +393,86 @@ input[type="submit"]:hover {
 /* Contact Section Styles */
 .contact-section {
   padding: 40px 20px;
-  background-color: #f0f0f0;
   text-align: center;
+  background-color: #f6fcfb;
 }
 
-.contact-text h2 {
-  font-size: 2em;
-  color: #102925;
-  margin-bottom: 15px;
+.contact-section h1 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 30px;
 }
 
-.contact-text h3 {
-  color: #29685e;
-  margin: 5px 0;
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.contact-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #102925;
+.form-group {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between label and input */
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+  flex: 1; /* Allow label to take up necessary space */
+  margin-right: 10px; /* Space between label and input */
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex; /* Use flex for vertical alignment */
+  align-items: center; /* Center align the label text */
+}
+
+input[type="text"],
+textarea {
+  flex: 2; /* Allow input to take more space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #144d43;
   color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.contact-link:hover {
+button:hover {
   background-color: #55ae9f;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 750px) {
+  .contact-section {
+    padding: 20px;
+  }
+
+  .contact-section form {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column; /* Stack elements on small screens */
+    align-items: flex-start; /* Align to the start */
+  }
+
+  label {
+    margin-right: 0; /* Remove right margin on small screens */
+    margin-bottom: 5px; /* Add space below label */
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%; /* Full width on small screens */
+  }
 }
 
 /* Footer Styles */
