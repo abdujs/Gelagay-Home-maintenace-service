@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up - Gelagayi Home Maintenance</title>
   <link rel="icon" href="img/gelagayilogo.jpg">
-  <link rel="stylesheet" href="formstyle.css">
+  <link rel="stylesheet" href="css/formstyle.css">
 </head>
 <body>
 
   <section class="form-container">
     <h2>Sign Up</h2>
-    <form method="POST">
-      <div class="input-group">
+    <form id="signupForm" method="POST" onsubmit="showResponse(event, 'Sign Up', 'signupForm', 'responseCardSignup')">      <div class="input-group">
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
       </div>
@@ -22,7 +21,7 @@
       </div>
       <div class="input-group">
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Format: 0986949555" required>
+        <input type="tel" id="phone" name="phone" placeholder="Format: 0986949555" required>
       </div>
       <div class="input-group">
         <label for="email">Email:</label>
@@ -38,7 +37,11 @@
       </div>
       <button type="submit">Sign Up</button>
     </form>
-  </section>
+    <div id="responseCardSignup" class="response-card">
+      <div class="response-message"></div>
+      <button class="ok-button" onclick="returnToForm('signupForm', 'responseCardSignup')">OK</button>
+  </div>  </section>
+  <script src="js/responseCard.js"></script>
 
 </body>
 </html>
