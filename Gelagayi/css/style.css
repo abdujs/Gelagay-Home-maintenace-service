@@ -1,0 +1,616 @@
+/* Reset some default browser styles */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Set the default font for the body */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Navigation bar styles */
+nav {
+  background: #1e5143;
+  height: 80px;
+  width: 100%;
+}
+
+/* Logo styles */
+.glogo {
+  float: left;
+  height: 70px;
+  padding-left: 20px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+/* Navigation name styles */
+.gname {
+  color: white;
+  font-size: 25px;
+  line-height: 80px;
+  float: left;
+  font-weight: bold;
+}
+
+/* Navigation list styles */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+/* Navigation list item styles */
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+/* Navigation link styles */
+nav ul li a {
+  color: white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* Active and hover link styles */
+a.active, a:hover {
+  background: #44b7a4;
+  transition: .5s;
+}
+
+/* Check button styles for mobile navigation */
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Checkbox for mobile navigation */
+#cheak {
+  display: none;
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 30px;
+  /* background: linear-gradient(135deg, #41786e, #60a196); */
+  /* color: #fffefe; */
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: #fbffff;
+  color: #102925;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-signup {
+  background-color: #144d43;
+  border: 2px solid #011815;
+  color: #ffffff;
+}
+
+.btn-login {
+  border: 2px solid #042324;
+  /* color: #ffffff; */
+  color: #08352e;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 40px 20px;
+  background-color: #fbffff;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.about-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-text h1 {
+  font-size: 2.5em;
+  color: #102925;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  color: #0a917b;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card p {
+  color: #000000;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section Styles */
+.services-section {
+  background-color: #fbffff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.services-section h1 {
+  font-size: 2.5em;
+  color: #102925;
+  margin-bottom: 30px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.service h2 {
+  color: #0a917b;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #102925;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.service a:hover {
+  background-color: transparent;
+  color: #102925;
+}
+
+/* Hover Effect for Service Cards */
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* General manager section styles */
+.gm {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+  background-color: #0a917b;
+}
+
+/* Form styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #286359;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e473e;
+}
+
+/* Image styles */
+.imag1 {
+  float: left;
+  padding: auto auto;
+  height: 40px;
+}
+
+#img1 {
+  height: 300px;
+}
+
+/* Secondary logo styles */
+.logo2 {
+  float: center;
+}
+
+.logo2 img {
+  height: 70px;
+  margin-right: 10px;
+}
+
+/* Authentication buttons styles */
+.auth-buttons {
+  float: right;
+  margin: 20px 20px;
+}
+
+.auth-buttons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: 1px solid #102925;
+  border-radius: 5px;
+}
+
+.auth-buttons a.signup {
+  background-color: #7dd37f;
+}
+
+.auth-buttons a.login {
+  background-color: #102925;
+}
+
+.auth-buttons a:hover {
+  background-color: transparent;
+  color: #102925;
+}
+
+/* Logo information styles */
+.logo2info {
+  font-weight: bold;
+  color: #286359;
+}
+
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f6fcfb;
+}
+
+.contact-section h1 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between label and input */
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+  flex: 1; /* Allow label to take up necessary space */
+  margin-right: 10px; /* Space between label and input */
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex; /* Use flex for vertical alignment */
+  align-items: center; /* Center align the label text */
+}
+
+input[type="text"],
+textarea {
+  flex: 2; /* Allow input to take more space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #144d43;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #55ae9f;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 750px) {
+  .contact-section {
+    padding: 20px;
+  }
+
+  .contact-section form {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column; /* Stack elements on small screens */
+    align-items: flex-start; /* Align to the start */
+  }
+
+  label {
+    margin-right: 0; /* Remove right margin on small screens */
+    margin-bottom: 5px; /* Add space below label */
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #102925;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #55ae9f;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 750px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .navlist ul li a {
+    font-size: 16px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #1d6155;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.active {
+    background: none;
+    color: #43a393;
+  }
+  #cheak:checked ~ ul {
+    left: 0;
+    display: none;
+  }
+  .about-us {
+    flex-direction: column;
+  }
+  .about-text, .about-image {
+    flex: 1 0 auto;
+  }
+  .service-us {
+    flex-direction: column;
+  }
+  .service-text, .service-image {
+    flex: 1 0 auto;
+  }
+  .service {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.response-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e0f7fa; /* Light cyan background */
+  color: #00695c; /* Dark teal text */
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 70%;
+  max-width: 400px;
+  text-align: center;
+  margin: 20px auto; /* Center the card */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transform: translateY(20px); /* Initial position */
+  opacity: 0; /* Start as invisible */
+}
+
+/* Animation when the card is shown */
+.response-card.show {
+  transform: translateY(0); /* Move to normal position */
+  opacity: 1; /* Fade in */
+}
