@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gelagayi - Home Maintenance Services</title>
   <link rel="icon" href="gelagayilogo.jpg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -113,8 +113,7 @@
    <!-- Contact Section -->
 <section class="contact-section" id="contact">
   <h1>CONTACT US</h1>
-  <form>
-    <div class="form-group">
+  <form id="contactForm" onsubmit="showResponse(event, 'Contact Us', 'contactForm', 'responseCardContact')">    <div class="form-group">
       <label for="fullname">Full Name:</label>
       <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
     </div>
@@ -131,8 +130,12 @@
 
     <button type="submit">Send</button>
   </form>
-</section>
-  </main>
+  <div id="responseCardContact" class="response-card">
+    <div class="response-message"></div>
+    <button class="ok-button" onclick="returnToForm('contactForm', 'responseCardContact')">OK</button>
+</div></section>
+
+</main>
 
   <footer>
     <div class="footer-section about">
@@ -158,5 +161,6 @@
       <p>&copy; May 2024 Gelagayi Home Maintenance</p>
     </div>
   </footer>
+  <script src="js/responseCard.js"></script>
 </body>
 </html>
