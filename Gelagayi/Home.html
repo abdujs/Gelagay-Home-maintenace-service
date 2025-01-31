@@ -15,7 +15,7 @@
     <a href="home.html"><img src="img/logo1.png" class="glogo" alt="Gelagayi Logo"></a>
     <label class="gname">Gelagayi</label>
     <ul>
-      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact Us</a></li>
@@ -110,25 +110,34 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-      <div class="contact-text">
-        <h2>Contact Us</h2>
-        <h3>+251 911111111</h3>
-        <h3>+251 711111111</h3>
-        <a href="contactus.html" class="contact-link">Get in Touch</a>
-      </div>
-    </section>
+   <!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <h1>CONTACT US</h1>
+  <form>
+    <div class="form-group">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
   </main>
 
   <footer>
     <div class="footer-section about">
-      <a href="home.html">
-        <img src="img/logo1.png" alt="Gelagayi Logo">
-      </a>
-      <p>
-        Gelagayi is a digital marketplace that aims to transform the home maintenance service industry by connecting homeowners with skilled professionals.
-      </p>
+      <a href="home.html"><img src="img/logo1.png" alt="Gelagayi Logo"></a>
+      <p>Gelagayi is a digital marketplace that changes the home maintenance service industry by connecting homeowners with skilled professionals.</p>
     </div>
     <div class="footer-section contact">
       <h2>Contact</h2>
@@ -140,15 +149,14 @@
       <h2>Quick Links</h2>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#services">Services</a></li>
+       <li><a href="#aboutus">About</a></li>
+       <li><a href="#services">Services</a></li>
+       <li><a href="#contactus">Contact Us</a></li>
       </ul>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; May 2024 AAU-School of Commerce Class Project</p>
+    <div class="webasig">
+      <p>&copy; May 2024 Gelagayi Home Maintenance</p>
     </div>
   </footer>
-
 </body>
 </html>

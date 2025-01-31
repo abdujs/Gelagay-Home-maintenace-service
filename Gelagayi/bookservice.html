@@ -1,68 +1,94 @@
-<!-- bookservice.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Service - Gelagayi</title>
-  <link rel="icon" href="img/gelagayilogo.jpg">
-  <link rel="stylesheet" href="formstyle.css">
+  <link rel="icon" href="img/logo1.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"  href="formstyle.css">
 </head>
 <body>
-  <header>
-    <a href="home.html"><img src="img/gelagayilogo.jpg" class="glogo" ></a>
+
+  <nav>
+    <input type="checkbox" id="cheak">
+    <label class="checkbtn" for="cheak">&#9776;</label>
+    <a href="home.html"><img src="img/logo1.png" class="glogo" alt="Gelagayi Logo"></a>
     <label class="gname">Gelagayi</label>
-  </header>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#aboutus">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contactus">Contact Us</a></li>
+    </ul>
+  </nav>
 
-  <section class="form-container">
-    <h1>Book Service</h1>
-    <form >
-        <input type="text" id="name" name="name" placeholder="User Name" required>
-        <input type="tel" id="pnumber" name="pnumber" pattern="[0-9]{10}" placeholder="Phone Number" required>
-        <input type="text" id="address" name="address" placeholder="Address" required>
-        <label for="service">Service Needed:</label>
-        <select id="service" name="service" required>
+  <main>
+    <section class="booking-section">
+      <h1>Book Your Service</h1>
+      <form action="submit_booking.php" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="full name..." required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="email address..." required>
+        </div>
+      
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" placeholder="phone number..." required>
+        </div>
+      
+        <div class="form-group">
+          <label for="service">Select Service:</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
             <option value="plumbing">Plumbing</option>
-            <option value="Electrical Work">Electrical Work</option>
-            <option value="Repair">Repair</option>
-            <option value="Dish Installation">Dish Installation</option>
-            <option value="Cleaning">Cleaning</option>
-            <option value="Paintaing">Painting</option>
-        </select>
-
-        <button type="submit">Book!</button>
-    </form>
-  </section>
+            <option value="electrical">Electrical Work</option>
+            <option value="cleaning">Cleaning</option>
+            <option value="repair">Repair</option>
+            <option value="installation">Installation</option>
+            <option value="painting">Painting</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+      
+        <input type="submit" value="Book Service">
+      </form>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-section about">
-      <a href="home.html" > <img src="img/logo1.png" ></a><br>
-      <p >Gelagayi is a digital marketplace
-        that aims to change the home maintenance 
-        service industry by providing a seamless platform 
-        for connecting homeowners with skilled professionals. 
-      </p>
-  </div>
-  <div class="footer-section contact">
+      <a href="home.html"><img src="img/logo1.png" alt="Gelagayi Logo"></a>
+      <p>Gelagayi is a digital marketplace that changes the home maintenance service industry by connecting homeowners with skilled professionals.</p>
+    </div>
+    <div class="footer-section contact">
       <h2>Contact</h2>
-      <h3>+251 911111111</h3><br>
-      <h3>+251 711111111</h3><br>
+      <h3>+251 911111111</h3>
+      <h3>+251 711111111</h3>
       <a href="mailto:Gelagayi@gmail.com"><h3>Gelagayi@gmail.com</h3></a>
-  </div>
-  <div class="footer-section quicklinks">
+    </div>
+    <div class="footer-section quicklinks">
       <h2>Quick Links</h2>
       <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="aboutus.html">About</a></li>
-          <li><a href="contactus.html">contactus</a></li>
-          <li><a href="services.html">service</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutus">About</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+        <li><a href="#services">Services</a></li>
       </ul>
-  </div>
-  <div class="webasig">
-  <p>&copy; May 2024 Gelagayi Home Maintenance
-    AAUSOC Web Assignment</p>
-  </div>
-</footer> 
+    </div>
+    <div class="webasig">
+      <p>&copy; May 2024 Gelagayi Home Maintenance</p>
+    </div>
+  </footer>
 
 </body>
 </html>
