@@ -1,5 +1,7 @@
+// Purpose: To show a response card after a form submission and return to the form
+
 function showResponse(event, actionType, formId, responseCardId) {
-    event.preventDefault(); // Prevent the form from submitting normally
+    event.preventDefault(); 
 
     // Get the form and response card elements
     const form = document.getElementById(formId);
@@ -26,9 +28,9 @@ function showResponse(event, actionType, formId, responseCardId) {
     responseCard.innerText = message;
 
     // Hide the form and show the response card
-    form.style.display = "none"; // Hide the form
-    responseCard.classList.add('show'); // Add class for animation
-    responseCard.style.display = "flex"; // Show the card
+    form.style.display = "none"; 
+    responseCard.classList.add('show'); 
+    responseCard.style.display = "flex"; 
 }
 
 // Function to return to the form
@@ -37,7 +39,7 @@ function returnToForm(formId, responseCardId) {
     const responseCard = document.getElementById(responseCardId);
     
     // Show the form and hide the response card
-    form.style.display = "block"; // Show the form
-    responseCard.style.display = "none"; // Hide the card
-    responseCard.classList.remove('show'); // Remove the animation class
+    form.style.display = "block"; 
+    responseCard.style.display = "none"; 
+    responseCard.classList.remove('show'); 
 }
