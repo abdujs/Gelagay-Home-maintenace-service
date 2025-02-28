@@ -11,21 +11,23 @@ import Signup from './components/SignUpForm';
 import Login from './components/Login';
 
 const App = () => (
-  <div>
+  <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
     <Navbar />
-    <Hero />
-    <Why />
-    <Services />
-    <ContactForm />
-    <Routes>
-      {/* <Route path="/" element={<Hero />} />
-      <Route path="/about" element={<About />} /> */}
-      {/* <Route path="/services" element={<Services />} /> */}
-      {/* <Route path="/contact" element={<ContactForm />} /> */}
-      <Route path="/BookingForm" element={<BookingForm />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/login" element={<Login />} />
-    </Routes>
+    <div style={{ flex: '1' }}>
+      <Hero />
+      <Why />
+      <Services />
+      <ContactForm />
+      <Routes>
+        {/* <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} /> */}
+        {/* <Route path="/services" element={<Services />} /> */}
+        {/* <Route path="/contact" element={<ContactForm />} /> */}
+        <Route path="/BookingForm" element={<BookingForm />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </div>
     <Footer />
   </div>
 );
