@@ -1,14 +1,13 @@
 # Gelagayi - Home Maintenance Service
 
-![Demo Video](./assets/demo-video.mp4)
+![Demo Video](./src/assets/Demo-Video.mp4)
 
-![Homepage Screenshot](homepage-screenshot.png)
 
-Gelagayi is a digital marketplace designed to transform the home maintenance service industry by connecting homeowners with skilled professionals through a user-friendly platform.
+Gelagay is a digital marketplace designed to transform the home maintenance service industry by connecting homeowners with skilled professionals through a user-friendly platform.
 
 ## Project Overview
 
-The Gelagayi Home Maintenance Service website provides users with a comprehensive platform to:
+The Gelagay Home Maintenance Service website provides users with a comprehensive platform to:
 
 - **Explore Services**: View detailed information about various home maintenance services offered.
 - **User Accounts**: Sign up and log in to manage personal accounts efficiently.
