@@ -2,7 +2,9 @@
 
 ![Demo Video Screenshot](./gelagay/src/assets/img/demo-video-screenshot.png)
 
-[Watch Demo Video](./gelagay/src/assets/Demo-Video.mp4)
+[![Watch Demo Video](https://img.shields.io/badge/Watch-Demo%20Video-blue)](https://drive.google.com/file/d/1qfmOoklqxx4wR0rDJ9zvsu3vjvZSZC-0/view?usp=drive_link/view)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)](https://github.com/your-username/gelagay-home-maintenance-service/actions)
 
 Gelagay is a digital marketplace designed to transform the home maintenance service industry by connecting homeowners with skilled professionals through a user-friendly platform.
 
@@ -38,20 +40,20 @@ To get a local copy up and running, follow these simple steps.
 
 Make sure you have the following installed:
 
-- Node.js
-- npm (Node Package Manager)
+- **Node.js**
+- **npm (Node Package Manager)**
 
 ### Installation
 
-1. Clone the repo:
+1. **Clone the repo**:
    ```sh
    git clone https://github.com/your-username/gelagay-home-maintenance-service.git
    ```
-2. Navigate to the project directory:
+2. **Navigate to the project directory**:
    ```sh
    cd gelagay-home-maintenance-service
    ```
-3. Install NPM packages:
+3. **Install NPM packages**:
    ```sh
    npm install
    ```
@@ -69,9 +71,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. **Fork the Project**
+2. **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the Branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
+
 
