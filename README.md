@@ -1,6 +1,5 @@
 # Gelagay - Home Maintenance Service
 
-
 [![Watch Demo Video](https://img.shields.io/badge/Watch-Demo%20Video-blue)](https://drive.google.com/file/d/1qfmOoklqxx4wR0rDJ9zvsu3vjvZSZC-0/view?usp=drive_link/view)
 
 Gelagay is a digital marketplace designed to transform the home maintenance service industry by connecting homeowners with skilled professionals through a user-friendly platform.
@@ -25,9 +24,8 @@ The Gelagay Home Maintenance Service website provides users with a comprehensive
 
 This project utilizes the following technologies:
 
-- **HTML**: For structuring the web pages.
-- **CSS**: For styling and layout design, ensuring a visually appealing interface.
-- **JavaScript**: For interactive features and dynamic content management.
+- **React**: For building the user interface.
+- **Tailwind CSS**: For utility-first CSS framework to style the application.
 
 ## Getting Started
 
